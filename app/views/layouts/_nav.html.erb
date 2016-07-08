@@ -21,6 +21,9 @@
             <li>
               <%= link_to "Đăng xuất", destroy_user_session_path, method: :delete	  %>
             </li>
+            <li>
+              <%= link_to "Cập nhật thông tin", '/users/edit' %>
+            </li>
         <% else %>
             <li>
               <%= link_to "Đăng nhập", new_user_session_path %>
