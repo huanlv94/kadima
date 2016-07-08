@@ -11,6 +11,7 @@ gem 'devise'
 gem 'private_pub'
 gem 'thin'
 gem 'heroku'
+gem 'haml'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development do

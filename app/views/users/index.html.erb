@@ -4,14 +4,14 @@
     <div style="height: 300px; overflow-y: auto;">
       <div class="panel panel-default">
         <!-- Default panel contents -->
-        <div class="panel-heading">Registered Users</div>
+        <div class="panel-heading">Chat với</div>
 
         <!-- Table -->
         <table class="table">
           <thead>
           <tr>
             <th>#</th>
-            <th>Name</th>
+            <th>Tên</th>
             <th></th>
           </tr>
           </thead>
@@ -21,7 +21,7 @@
                 <td><%= index +=1 %></td>
                 <td><%= user.name %></td>
                 <td>
-                  <%= link_to "Send Message", "#", class: "btn btn-success btn-xs start-conversation",
+                  <%= link_to "Gửi tin nhắn", "#", class: "btn btn-success btn-xs start-conversation",
                               "data-sid" => current_user.id, "data-rip" => user.id %>
                 </td>
               </tr>
@@ -33,7 +33,7 @@
 
     </div>
     <hr>
-    <h3>Tin nhan cua ban !!</h3>
+    <h3>Trò truyện gần đây</h3>
 
     <div style="height: 400px; overflow-y: auto;">
       <% if @conversations.any? %>
@@ -51,7 +51,7 @@
             <% end %>
           </ul>
       <% else %>
-          <p>You have no conversations. Click send message with any user to create one.</p>
+          <p>Bạn không có cuộc trò chuyện nao.</p>
       <% end %>
     </div>
 
