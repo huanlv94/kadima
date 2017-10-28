@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'private_pub'
 gem 'thin'
+gem 'puma'
 gem 'heroku'
 gem 'haml'
 gem 'sdoc', '~> 0.4.0',          group: :doc
